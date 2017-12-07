@@ -1,0 +1,14 @@
+com\dotridge\PatientTest.class
+com\dotridge\PatientTestCheck.class
+com\dotridge\LabTestCategoriesOperations.class
+com\dotridge\dao\HospitalDaoTest.class
+com\dotridge\AdminTest.class
+com\dotridge\ResourceLoader.class
+com\dotridge\LabTestOperations.class
+com\dotridge\controller\HospitalControllerTest.class
+com\dotridge\HospitalTest.class
+com\dotridge\MessageResourceTest.class
+com\dotridge\dao\HospitalDao_JunitTest.class
+com\dotridge\ResourceBundle.class
+com\dotridge\HibernateCacheTesting.class
+com\dotridge\ForTesting.class
