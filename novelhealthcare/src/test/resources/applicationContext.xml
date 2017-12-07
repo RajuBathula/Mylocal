@@ -7,8 +7,13 @@
              http://www.springframework.org/schema/context 
              http://www.springframework.org/schema/context/spring-context.xsd">
 
+<<<<<<< HEAD
 	<context:component-scan base-package="com.dotridge.service"></context:component-scan> 
 		<context:component-scan base-package="com.dotridge.dao"></context:component-scan>
+=======
+	<context:component-scan base-package="com.dotridge.service"></context:component-scan>
+	<context:component-scan base-package="com.dotridge.dao"></context:component-scan>
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 
@@ -17,6 +22,7 @@
 		<property name="password" value="root"></property>
 		<property name="url" value="jdbc:mysql://localhost:3306/novelhealthcare"></property>
 	</bean>
+<<<<<<< HEAD
 	<bean id="resourceBundle" class="com.dotridge.ResourceBundle">
 		<property name="baseName" value="classpath:db.properties"></property>
 
@@ -29,6 +35,9 @@
 			</list>
 		</property>
 	</bean>
+=======
+
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean"
@@ -38,10 +47,13 @@
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
 				<prop key="hibernate.show_sql">true</prop>
 				<prop key="hibernate.hbm2ddl.auto">update</prop>
+<<<<<<< HEAD
 				<prop key="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory
 				</prop>
 				<prop key="hibernate.cache.use_second_level_cache">true</prop>
 				<prop key="hibernate.cache.use_query_cache">true</prop>
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 			</props>
 		</property>
 		<property name="packagesToScan" value="com.dotridge.domain"></property>

@@ -5,7 +5,10 @@ import java.util.List;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+<<<<<<< HEAD
 import org.junit.Ignore;
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +22,10 @@ import com.dotridge.domain.Hospital;
 public class HospitalDaoTest {
 	@Autowired
 	private HospitalDao hospDao;
+<<<<<<< HEAD
 	@Ignore
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	@Test
 	public void tesGetAllHospitals() {
 		List<Hospital> hospitalsList = hospDao.getAllHospitals();

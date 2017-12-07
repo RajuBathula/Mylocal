@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 com\dotridge\domain\Patient.class
 com\dotridge\service\LabTestCategoriesService.class
 com\dotridge\bean\LabTestBean.class
@@ -57,6 +58,23 @@ com\dotridge\bean\LoginBean.class
 com\dotridge\dao\TestTypeDaoImpl.class
 com\dotridge\dao\UserProfileDao.class
 com\dotridge\dao\UserProfileDaoImpl.class
+=======
+com\dotridge\domain\Admin.class
+com\dotridge\service\HospitalServiceImpl.class
+com\dotridge\dao\AdminDao.class
+com\dotridge\service\HospitalService.class
+com\dotridge\service\AdminService.class
+com\dotridge\bean\HospitalBean.class
+com\dotridge\bean\ManageUserProfileBean.class
+com\dotridge\bean\AdminBean.class
+com\dotridge\controller\HomeController.class
+com\dotridge\dao\HospitalDaoImpl.class
+com\dotridge\util\SesssionFactoryUtil.class
+com\dotridge\bean\LoginBean.class
+com\dotridge\dao\AdminDaoImpl.class
+com\dotridge\domain\Hospital.class
+com\dotridge\controller\AdminController.class
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 com\dotridge\controller\HospitalController.class
 com\dotridge\service\AdminServiceImpl.class
 com\dotridge\util\ServiceConstraints.class

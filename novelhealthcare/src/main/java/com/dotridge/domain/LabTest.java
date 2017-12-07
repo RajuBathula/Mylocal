@@ -20,6 +20,7 @@ public class LabTest implements Serializable {
 	private int unit;
 	@OneToOne
 	private LabTestCategories testCategories;
+<<<<<<< HEAD
 	public int getLabTestId() {
 		return labTestId;
 	}
@@ -105,5 +106,7 @@ public class LabTest implements Serializable {
 			return false;
 		return true;
 	}
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 
 }

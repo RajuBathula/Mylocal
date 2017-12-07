@@ -29,10 +29,17 @@ public class HospitalDaoImpl implements HospitalDao {
 	}
 
 	public Hospital getHospitalById(int id) {
+<<<<<<< HEAD
 		SessionFactory sessionFactory = SesssionFactoryUtil.getSessionFactory();
 		Session ses = sessionFactory.openSession();
 		//Session ses = sessionFactory.openSession();
 		//Session ses=sessionFactory.openSession();
+=======
+		/*SessionFactory sessionFactory = SesssionFactoryUtil.getSessionFactory();
+		Session ses = sessionFactory.openSession();*/
+		//Session ses = sessionFactory.openSession();
+		Session ses=sessionFactory.openSession();
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 		Transaction tx = ses.beginTransaction();
 		Hospital hs = (Hospital) ses.get(Hospital.class, id);
 		return hs;

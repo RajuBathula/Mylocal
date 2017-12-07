@@ -24,9 +24,7 @@
 <script type="text/javascript">
 	
 </script>
-</head>
 <body>
-
 	<!-- Fixed navbar -->
 	<nav id="header" class="navbar navbar-fixed-top">
 	<div id="header-container" class="container navbar-container">
@@ -69,70 +67,67 @@
 					<div class="panel-body">
 						<div class="row">
 							<div class="col-lg-12">
-<<<<<<< HEAD
-								<form id="login-form" action="./j_spring_security_check" method="POST" role="form"
+								<form:form id="login-form" action="./registration"
+									commandName="ManageUserProfileBean" method="GET" role="form"
 									style="display: block;">
 									<div class="form-group">
-										<input name="j_username" type="text" id="username"
-											tabindex="1" class="form-control" placeholder="Username"
-											value=""></input>
-										<font color="red"> <form:errors path="userId"></form:errors></font>
+										<form:input path="firastName" type="text" id="firstname"
+											tabindex="1" class="form-control" placeholder="FirstName"
+											value=""></form:input>
 									</div>
-									<%-- <div>
-										<font color="red"> <form:errors path="userId"></form:errors></font>
-									</div> --%>
 									<div class="form-group">
-										<input name="j_password" type="password" id="password"
-											tabindex="2" class="form-control" placeholder="Password"></input>
-										<font color="red"><form:errors path="password"></form:errors></font>
-
+										<form:input path="lastName" type="text" id="lastname"
+											tabindex="2" class="form-control" placeholder="LastName"
+											value=""></form:input>
 									</div>
-									<%-- <div>
-										<font color="red"><form:errors path="password"></form:errors></font>
-									</div> --%>
-=======
-								<form:form id="login-form" action="./login"
-									commandName="loginBean" method="GET" role="form"
-									style="display: block;">
 									<div class="form-group">
-										<form:input path="userId" type="text" id="username"
-											tabindex="1" class="form-control" placeholder="Username"
+										<form:input path="email" type="text" id="email" tabindex="3"
+											class="form-control" placeholder="Email" value=""></form:input>
+									</div>
+									<div class="form-group">
+										<form:input path="userName" type="text" id="username"
+											tabindex="4" class="form-control" placeholder="Username"
 											value=""></form:input>
 									</div>
 									<div class="form-group">
 										<form:input path="password" type="password" id="password"
-											tabindex="2" class="form-control" placeholder="Password"></form:input>
+											tabindex="5" class="form-control" placeholder="Password"></form:input>
 									</div>
->>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
-									<div class="form-group text-center">
-										<input type="checkbox" tabindex="3" class="" name="remember"
-											id="remember"> <label for="remember">
-											Remember Me</label>
+									<div class="form-group">
+										<form:input path="phoneNum" type="number" id="phonenum"
+											tabindex="6" class="form-control" placeholder="PhoneNum"></form:input>
 									</div>
+									<!-- <div class="form-group text-center">
+          <input type="checkbox" tabindex="7" class="" name="remember"
+           id="remember"> <label for="remember">
+           Remember Me</label>
+         </div> -->
+									<hr>
 									<div class="form-group">
 										<div class="row">
 											<div class="col-sm-6 col-sm-offset-3">
-												<input type="submit" id="login-submit" tabindex="4"
-													class="form-control btn btn-login" value="Log In">
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="row">
-											<div class="col-lg-12">
-												<div class="text-center">
-													<a href="https://phpoll.com/recover" tabindex="5"
-														class="forgot-password">Forgot Password?</a>
+												<div style="float: left; width: 130px">
+													<input type="submit" id="login-submit" tabindex="7"
+														align="left" class="form-control btn btn-login"
+														value="Registration">
+
 												</div>
 											</div>
 										</div>
 									</div>
 
-<<<<<<< HEAD
-								</form>
-=======
+
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" id="login-submit" tabindex="8"
+													class="form-control btn btn-login" value="cancel">
+											</div>
+										</div>
+									</div>
+									</hr>
+
 								</form:form>
->>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 							</div>
 						</div>
 					</div>
@@ -155,6 +150,5 @@
 			</div>
 		</div>
 	</div>
-
 </body>
 </html>

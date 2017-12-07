@@ -3,6 +3,7 @@
  */
 package com.dotridge.controller;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -18,17 +19,25 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
+=======
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.dotridge.bean.LoginBean;
+<<<<<<< HEAD
 import com.dotridge.bean.LoginValidtor;
 import com.dotridge.bean.ManageUserProfileBean;
 import com.dotridge.bean.RoleBean;
 import com.dotridge.service.RoleService;
 import com.dotridge.service.UserProfileService;
 import com.dotridge.util.ServiceConstraints;
+=======
+import com.dotridge.bean.ManageUserProfileBean;
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 
 /**
  * @author Raju
@@ -36,6 +45,7 @@ import com.dotridge.util.ServiceConstraints;
  */
 @Controller
 public class HomeController {
+<<<<<<< HEAD
 
 	@Autowired
 	private LoginValidtor loginvalidator;
@@ -50,6 +60,11 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/home")
 	public String getHomePage() {
+=======
+	@RequestMapping(value = "/home")
+	public String getHomePage() {
+		// System.out.println("home request");
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 		return "home";
 
 	}
@@ -62,6 +77,7 @@ public class HomeController {
 	}
 
 	@RequestMapping(value = "/login")
+<<<<<<< HEAD
 	public String doLogin(@Valid @ModelAttribute("loginBean") LoginBean loginBean, BindingResult result) {
 		if (result.hasErrors()) {
 			List<FieldError> fieldErrors = result.getFieldErrors();
@@ -135,6 +151,16 @@ public class HomeController {
 				return "getSuperAdminBoard";
 		}
 
+=======
+	public String doLogin(@ModelAttribute("loginBean") LoginBean loginBean) {
+		System.out.println(loginBean.toString());
+		String userName = loginBean.getUserId();
+		if (userName != null && !userName.isEmpty()) {
+			if (userName.equalsIgnoreCase("superadmin@email.com"));
+			return "getSuperAdminBoard";
+		}
+		
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 		return "home";
 
 	}
@@ -142,6 +168,7 @@ public class HomeController {
 	@RequestMapping(value = "/getSignUpPage")
 	public String getSignupPage(Model model) {
 		model.addAttribute("ManageUserProfileBean", new ManageUserProfileBean());
+<<<<<<< HEAD
 		List<RoleBean> roles = roleService.getAllRoles();
 		List<String> roleList = new ArrayList<String>();
 		for (RoleBean roleBean : roles) {
@@ -152,15 +179,28 @@ public class HomeController {
 		}
 		model.addAttribute("roleList", roleList);
 		return "getSignUpForm";
+=======
+		return "registration";
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	}
 
 	@RequestMapping(value = "/registration")
 	public String doSignUp(@ModelAttribute("ManageUserProfileBean") ManageUserProfileBean manageUserProfileBean) {
 		System.out.println(manageUserProfileBean.toString());
+<<<<<<< HEAD
 		ManageUserProfileBean createuserProfile = userProfileservice.createuserProfile(manageUserProfileBean);
 		System.out.println(manageUserProfileBean.toString());
 		
 		return "home";
 	}
 
+=======
+		return "success";
+	}
+
+	/*
+	 * @RequestMapping(params = "/cancel", method = RequestMethod.POST) public
+	 * String cancelSignUp() { return "registration"; }
+	 */
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 }

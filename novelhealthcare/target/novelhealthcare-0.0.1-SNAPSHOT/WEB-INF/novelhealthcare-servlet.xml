@@ -9,7 +9,11 @@
              http://www.springframework.org/schema/context 
              http://www.springframework.org/schema/context/spring-context.xsd">
 	<!-- <context:annotation-config></context:annotation-config> -->
+<<<<<<< HEAD
 	<context:component-scan base-package="com.dotridge.controller,com.dotridge.bean"></context:component-scan>
+=======
+	<context:component-scan base-package="com.dotridge.controller"></context:component-scan>
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	<mvc:annotation-driven></mvc:annotation-driven><!-- -->
 	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
 	<bean id="viewReslover"

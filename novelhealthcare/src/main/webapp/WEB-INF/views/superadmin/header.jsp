@@ -61,7 +61,11 @@
           <span class="glyphicon glyphicon-header"><font color="white">Super Admin</font></span><span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#"><span class="label label-primary">Profile</span></a></li>
+<<<<<<< HEAD
             <li><a href="./logout"><span class="label label-default">Sign out</span></a></li>
+=======
+            <li><a href="#"><span class="label label-default">Sign out</span></a></li>
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
           </ul>
         </li>
       </ul> 

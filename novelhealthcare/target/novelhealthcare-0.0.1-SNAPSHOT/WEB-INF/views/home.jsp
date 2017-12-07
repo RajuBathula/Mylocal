@@ -103,8 +103,12 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><i class="icon-home icon-black"></i><a href="#">Home</a></li>
                         <li><a href="getSignUpPage">Signup</a></li>
+<<<<<<< HEAD
                        <li><a href="getLoginPage">Login</a></li>
                        <!--  <li><a href="windowlogin">Login</a></li> -->
+=======
+                        <li><a href="getLoginPage">Login</a></li>
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
                         <li><a href="about">About</a></li>
                         <li><a href="contact">Contact</a></li>
                          <li><a href="contact"></a></li>

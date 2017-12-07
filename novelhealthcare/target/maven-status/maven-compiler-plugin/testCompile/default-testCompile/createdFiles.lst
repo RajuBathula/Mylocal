@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 com\dotridge\PatientTest.class
 com\dotridge\PatientTestCheck.class
 com\dotridge\LabTestCategoriesOperations.class
@@ -12,3 +13,9 @@ com\dotridge\dao\HospitalDao_JunitTest.class
 com\dotridge\ResourceBundle.class
 com\dotridge\HibernateCacheTesting.class
 com\dotridge\ForTesting.class
+=======
+com\dotridge\dao\HospitalDaoTest.class
+com\dotridge\dao\HospitalDao_JunitTest.class
+com\dotridge\AdminTest.class
+com\dotridge\HospitalTest.class
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082

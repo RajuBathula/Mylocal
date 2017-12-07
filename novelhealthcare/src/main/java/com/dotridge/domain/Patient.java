@@ -1,5 +1,6 @@
 package com.dotridge.domain;
 
+<<<<<<< HEAD
 import java.io.File;
 import java.io.Serializable;
 import java.util.Date;
@@ -259,5 +260,8 @@ public class Patient implements Serializable {
 		return true;
 	}
 	
+=======
+public class Patient {
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 
 }

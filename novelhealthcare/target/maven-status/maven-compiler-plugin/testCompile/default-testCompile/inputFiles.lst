@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 F:\dotridge\projects\novelhealthcare\src\test\java\com\dotridge\MessageResourceTest.java
 F:\dotridge\projects\novelhealthcare\src\test\java\com\dotridge\HibernateCacheTesting.java
 F:\dotridge\projects\novelhealthcare\src\test\java\com\dotridge\ForTesting.java
@@ -12,3 +13,9 @@ F:\dotridge\projects\novelhealthcare\src\test\java\com\dotridge\LabTestOperation
 F:\dotridge\projects\novelhealthcare\src\test\java\com\dotridge\dao\HospitalDaoTest.java
 F:\dotridge\projects\novelhealthcare\src\test\java\com\dotridge\HospitalTest.java
 F:\dotridge\projects\novelhealthcare\src\test\java\com\dotridge\PatientTestCheck.java
+=======
+F:\dotridge\projects\novelhealthcare\src\test\java\com\dotridge\dao\HospitalDaoTest.java
+F:\dotridge\projects\novelhealthcare\src\test\java\com\dotridge\HospitalTest.java
+F:\dotridge\projects\novelhealthcare\src\test\java\com\dotridge\dao\HospitalDao_JunitTest.java
+F:\dotridge\projects\novelhealthcare\src\test\java\com\dotridge\AdminTest.java
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082

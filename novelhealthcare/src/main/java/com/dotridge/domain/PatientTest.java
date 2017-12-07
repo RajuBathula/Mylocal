@@ -10,7 +10,11 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+<<<<<<< HEAD
 
+=======
+//
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 @Entity
 public class PatientTest implements Serializable {
 
@@ -22,6 +26,7 @@ public class PatientTest implements Serializable {
 	private Patient patient;
 	private Date testDate;
 	private Date deliveryDate;
+<<<<<<< HEAD
 
 	public int getPatientTestId() {
 		return patientTestId;
@@ -61,6 +66,45 @@ public class PatientTest implements Serializable {
 				+ ", deliveryDate=" + deliveryDate + "]";
 	}
 
+=======
+	@OneToMany
+	private TestType testType;
+	public int getPatientTestId() {
+		return patientTestId;
+	}
+	public void setPatientTestId(int patientTestId) {
+		this.patientTestId = patientTestId;
+	}
+	public Patient getPatient() {
+		return patient;
+	}
+	public void setPatient(Patient patient) {
+		this.patient = patient;
+	}
+	public Date getTestDate() {
+		return testDate;
+	}
+	public void setTestDate(Date testDate) {
+		this.testDate = testDate;
+	}
+	public Date getDeliveryDate() {
+		return deliveryDate;
+	}
+	public void setDeliveryDate(Date deliveryDate) {
+		this.deliveryDate = deliveryDate;
+	}
+	public TestType getTestType() {
+		return testType;
+	}
+	public void setTestType(TestType testType) {
+		this.testType = testType;
+	}
+	@Override
+	public String toString() {
+		return "PatientTest [patientTestId=" + patientTestId + ", patient=" + patient + ", testDate=" + testDate
+				+ ", deliveryDate=" + deliveryDate + ", testType=" + testType + "]";
+	}
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -69,9 +113,15 @@ public class PatientTest implements Serializable {
 		result = prime * result + ((patient == null) ? 0 : patient.hashCode());
 		result = prime * result + patientTestId;
 		result = prime * result + ((testDate == null) ? 0 : testDate.hashCode());
+<<<<<<< HEAD
 		return result;
 	}
 
+=======
+		result = prime * result + ((testType == null) ? 0 : testType.hashCode());
+		return result;
+	}
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -98,7 +148,18 @@ public class PatientTest implements Serializable {
 				return false;
 		} else if (!testDate.equals(other.testDate))
 			return false;
+<<<<<<< HEAD
 		return true;
 	}
 
+=======
+		if (testType == null) {
+			if (other.testType != null)
+				return false;
+		} else if (!testType.equals(other.testType))
+			return false;
+		return true;
+	}
+	
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 }

@@ -4,13 +4,22 @@ import java.io.Serializable;
 
 public class ManageUserProfileBean implements Serializable {
 
+<<<<<<< HEAD
 	private static final long serialVersionUID = -1340862724852365820L;
 	private int id;
 	private String firstName;
+=======
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1340862724852365820L;
+	private String firastName;
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	private String lastName;
 	private String email;
 	private String userName;
 	private String password;
+<<<<<<< HEAD
 	private String confirmPassword;
 	private Long phoneNum;
 	private String roleName;
@@ -25,6 +34,14 @@ public class ManageUserProfileBean implements Serializable {
 	}
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
+=======
+	private String phoneNum;
+	public String getFirastName() {
+		return firastName;
+	}
+	public void setFirastName(String firastName) {
+		this.firastName = firastName;
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	}
 	public String getLastName() {
 		return lastName;
@@ -50,6 +67,7 @@ public class ManageUserProfileBean implements Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+<<<<<<< HEAD
 	public String getConfirmPassword() {
 		return confirmPassword;
 	}
@@ -145,3 +163,18 @@ public class ManageUserProfileBean implements Serializable {
 	
 	
 }
+=======
+	public String getPhoneNum() {
+		return phoneNum;
+	}
+	public void setPhoneNum(String phoneNum) {
+		this.phoneNum = phoneNum;
+	}
+	@Override
+	public String toString() {
+		return "ManageUserProfileBean [firastName=" + firastName + ", lastName=" + lastName + ", email=" + email
+				+ ", userName=" + userName + ", password=" + password + ", phoneNum=" + phoneNum + "]";
+	}
+	
+}
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082

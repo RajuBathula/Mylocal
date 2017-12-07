@@ -19,6 +19,7 @@
 	<servlet-mapping>
 		<servlet-name>novelhealthcare</servlet-name>
 		<url-pattern>/</url-pattern>
+<<<<<<< HEAD
 
 	</servlet-mapping>
 	<listener>
@@ -38,4 +39,16 @@
 		<filter-name>springSecurityFilterChain</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping> 
+=======
+		
+	</servlet-mapping>
+	<listener>
+	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	
+	</listener>
+	<context-param>
+	<param-name>contextConfigLocation</param-name>
+	<param-value>/WEB-INF/applicationContext.xml</param-value>
+	</context-param>
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 </web-app>

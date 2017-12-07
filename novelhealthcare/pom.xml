@@ -78,6 +78,7 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-ehcache -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -131,5 +132,7 @@
 		</dependency>
 
 
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	</dependencies>
 </project>

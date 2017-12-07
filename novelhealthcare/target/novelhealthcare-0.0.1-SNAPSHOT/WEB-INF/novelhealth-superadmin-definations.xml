@@ -30,8 +30,11 @@
 	<definition name="editAdminDef" extends="SuperAdminBaseLayout">
 	<put-attribute name="body" value="/WEB-INF/views/superadmin/editAdmin.jsp"></put-attribute>
 	</definition>
+<<<<<<< HEAD
 	
 	<definition name="getSignUpForm" extends="SuperAdminBaseLayout">
 	<put-attribute name="body" value="/WEB-INF/views/superadmin/registration.jsp"></put-attribute>
 	</definition>
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 </tiles-definitions>

@@ -34,7 +34,11 @@
 			</div>
 			<div class="btn-group">
 				<a title="Show All" class="btn btn-block btn-primary btn-flat"
+<<<<<<< HEAD
 					onclick="showAllRecords();" href="./getAllHospitals"><span class="hide-on-mobile">Show
+=======
+					onclick="showAllRecords();"><span class="hide-on-mobile">Show
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 						All&nbsp;&nbsp;</span><i class="fa fa-th-list"></i></a>
 			</div>
 			<form action="./searchHospitals">
@@ -86,14 +90,22 @@
 		</table>
 		<nav>
 		<ul class="pagination">
+<<<<<<< HEAD
 			<li><a href="./getAllHospitalsByPaging?currentPage=${loop.count}" aria-label="Previous"> <span
+=======
+			<li><a href="./getAllHospitalsByPaging?currentPage=${loop.count-1}" aria-label="Previous"> <span
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 					aria-hidden="true">&laquo;</span>
 					</a></li>
 					 <c:forEach
 						items="${pageBarList}" var="hospBean" varStatus="loop">
 						<li><a href="./getAllHospitalsByPaging?currentPage=${loop.count}">${loop.count}</a></li>
 					</c:forEach>
+<<<<<<< HEAD
 					<li><a href="./getAllHospitalsByPaging?currentPage=${loop.count}" aria-label="Next"> <span
+=======
+					<li><a href="./getAllHospitalsByPaging?currentPage=${loop.count+1}" aria-label="Next"> <span
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 							aria-hidden="true">&raquo;</span>
 					</a></li>
 		</ul>

@@ -69,6 +69,7 @@
 					<div class="panel-body">
 						<div class="row">
 							<div class="col-lg-12">
+<<<<<<< HEAD
 								<form id="login-form" action="./j_spring_security_check" method="POST" role="form"
 									style="display: block;">
 									<div class="form-group">
@@ -89,6 +90,20 @@
 									<%-- <div>
 										<font color="red"><form:errors path="password"></form:errors></font>
 									</div> --%>
+=======
+								<form:form id="login-form" action="./login"
+									commandName="loginBean" method="GET" role="form"
+									style="display: block;">
+									<div class="form-group">
+										<form:input path="userId" type="text" id="username"
+											tabindex="1" class="form-control" placeholder="Username"
+											value=""></form:input>
+									</div>
+									<div class="form-group">
+										<form:input path="password" type="password" id="password"
+											tabindex="2" class="form-control" placeholder="Password"></form:input>
+									</div>
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 									<div class="form-group text-center">
 										<input type="checkbox" tabindex="3" class="" name="remember"
 											id="remember"> <label for="remember">
@@ -113,7 +128,11 @@
 										</div>
 									</div>
 
+<<<<<<< HEAD
 								</form>
+=======
+								</form:form>
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 							</div>
 						</div>
 					</div>

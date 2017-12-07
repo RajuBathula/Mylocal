@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.dotridge.dao.HospitalDaoTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 sec
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.895 sec
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082

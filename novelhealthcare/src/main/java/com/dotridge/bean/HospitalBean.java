@@ -3,7 +3,10 @@ package com.dotridge.bean;
 import java.io.Serializable;
 
 public class HospitalBean implements Serializable {
+<<<<<<< HEAD
 	private static final long serialVersionUID = -6611134205646602721L;
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	private int hospitalId;
 	private String hospitalName;
 	private String address;
@@ -17,6 +20,7 @@ public class HospitalBean implements Serializable {
 	private String logo;
 	private String registrationDocument;
 	private String status;
+<<<<<<< HEAD
 
 	public int getHospitalId() {
 		return hospitalId;
@@ -122,6 +126,86 @@ public class HospitalBean implements Serializable {
 		this.status = status;
 	}
 
+=======
+	public int getHospitalId() {
+		return hospitalId;
+	}
+	public void setHospitalId(int hospitalId) {
+		this.hospitalId = hospitalId;
+	}
+	public String getHospitalName() {
+		return hospitalName;
+	}
+	public void setHospitalName(String hospitalName) {
+		this.hospitalName = hospitalName;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getAddress1() {
+		return address1;
+	}
+	public void setAddress1(String address1) {
+		this.address1 = address1;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public int getZipcode() {
+		return zipcode;
+	}
+	public void setZipcode(int zipcode) {
+		this.zipcode = zipcode;
+	}
+	public long getPhone() {
+		return phone;
+	}
+	public void setPhone(long phone) {
+		this.phone = phone;
+	}
+	public long getFax() {
+		return fax;
+	}
+	public void setFax(long fax) {
+		this.fax = fax;
+	}
+	public String getLogo() {
+		return logo;
+	}
+	public void setLogo(String logo) {
+		this.logo = logo;
+	}
+	public String getRegistrationDocument() {
+		return registrationDocument;
+	}
+	public void setRegistrationDocument(String registrationDocument) {
+		this.registrationDocument = registrationDocument;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	@Override
 	public String toString() {
 		return "HospitalBean [hospitalId=" + hospitalId + ", hospitalName=" + hospitalName + ", address=" + address
@@ -129,7 +213,10 @@ public class HospitalBean implements Serializable {
 				+ zipcode + ", phone=" + phone + ", fax=" + fax + ", logo=" + logo + ", registrationDocument="
 				+ registrationDocument + ", status=" + status + "]";
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -149,7 +236,10 @@ public class HospitalBean implements Serializable {
 		result = prime * result + zipcode;
 		return result;
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -214,5 +304,9 @@ public class HospitalBean implements Serializable {
 			return false;
 		return true;
 	}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 }

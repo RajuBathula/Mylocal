@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+<<<<<<< HEAD
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
@@ -23,6 +24,17 @@ public class Hospital implements Serializable, Cloneable {
 	@Override
 	public Object clone() throws CloneNotSupportedException {
 		Hospital hd = new Hospital();
+=======
+@Entity
+@Table(name = "hospital")
+public class Hospital implements Serializable,Cloneable {
+
+	private static final long serialVersionUID = 4365720373839147515L;
+	@Override
+	public Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		Hospital hd=new Hospital();
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 		hd.setHospitalId(this.hospitalId);
 		hd.setAddress(this.address);
 		hd.setAddress1(this.address1);
@@ -43,11 +55,15 @@ public class Hospital implements Serializable, Cloneable {
 		hd.setZipcode(this.zipcode);
 		return super.clone();
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "hospital_id")
 	private int hospitalId;
+<<<<<<< HEAD
 	@Column(name = "hospital_name", nullable = false)
 	private String hospitalName;
 	@Column(name = "address", nullable = false)
@@ -63,6 +79,23 @@ public class Hospital implements Serializable, Cloneable {
 	@Column(name = "zipcode", nullable = false)
 	private int zipcode;
 	@Column(name = "phone", nullable = false)
+=======
+	@Column(name = "hospital_name",nullable=false)
+	private String hospitalName;
+	@Column(name = "address", nullable=false)
+	private String address;
+	@Column(name = "address1")
+	private String address1;
+	@Column(name = "city",nullable=false)
+	private String city;
+	@Column(name = "state",nullable=false)
+	private String state;
+	@Column(name = "email",nullable=false,unique=true)
+	private String email;
+	@Column(name = "zipcode",nullable=false)
+	private int zipcode;
+	@Column(name = "phone",nullable=false)
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	private long phone;
 	@Column(name = "fax")
 	private long fax;
@@ -80,6 +113,7 @@ public class Hospital implements Serializable, Cloneable {
 	private Date createdDate;
 	@Column(name = "modified_date")
 	private Date modifiedDate;
+<<<<<<< HEAD
 
 	public int getHospitalId() {
 		return hospitalId;
@@ -217,6 +251,110 @@ public class Hospital implements Serializable, Cloneable {
 		this.modifiedDate = modifiedDate;
 	}
 
+=======
+	public int getHospitalId() {
+		return hospitalId;
+	}
+	public void setHospitalId(int hospitalId) {
+		this.hospitalId = hospitalId;
+	}
+	public String getHospitalName() {
+		return hospitalName;
+	}
+	public void setHospitalName(String hospitalName) {
+		this.hospitalName = hospitalName;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getAddress1() {
+		return address1;
+	}
+	public void setAddress1(String address1) {
+		this.address1 = address1;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public int getZipcode() {
+		return zipcode;
+	}
+	public void setZipcode(int zipcode) {
+		this.zipcode = zipcode;
+	}
+	public long getPhone() {
+		return phone;
+	}
+	public void setPhone(long phone) {
+		this.phone = phone;
+	}
+	public long getFax() {
+		return fax;
+	}
+	public void setFax(long fax) {
+		this.fax = fax;
+	}
+	public String getLogo() {
+		return logo;
+	}
+	public void setLogo(String logo) {
+		this.logo = logo;
+	}
+	public String getRegistrationDocument() {
+		return registrationDocument;
+	}
+	public void setRegistrationDocument(String registrationDocument) {
+		this.registrationDocument = registrationDocument;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public String getCreatedBy() {
+		return createdBy;
+	}
+	public void setCreatedBy(String createdBy) {
+		this.createdBy = createdBy;
+	}
+	public String getModifiedBy() {
+		return modifiedBy;
+	}
+	public void setModifiedBy(String modifiedBy) {
+		this.modifiedBy = modifiedBy;
+	}
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
+	public Date getModifiedDate() {
+		return modifiedDate;
+	}
+	public void setModifiedDate(Date modifiedDate) {
+		this.modifiedDate = modifiedDate;
+	}
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	@Override
 	public String toString() {
 		return "Hospital [hospitalId=" + hospitalId + ", hospitalName=" + hospitalName + ", address=" + address
@@ -225,7 +363,10 @@ public class Hospital implements Serializable, Cloneable {
 				+ registrationDocument + ", status=" + status + ", createdBy=" + createdBy + ", modifiedBy="
 				+ modifiedBy + ", createdDate=" + createdDate + ", modifiedDate=" + modifiedDate + "]";
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -249,7 +390,10 @@ public class Hospital implements Serializable, Cloneable {
 		result = prime * result + zipcode;
 		return result;
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -334,5 +478,11 @@ public class Hospital implements Serializable, Cloneable {
 			return false;
 		return true;
 	}
+<<<<<<< HEAD
 
+=======
+	
+	
+	
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 }

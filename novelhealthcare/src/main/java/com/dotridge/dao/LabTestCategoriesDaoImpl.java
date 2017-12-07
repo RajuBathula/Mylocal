@@ -9,6 +9,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import com.dotridge.domain.LabTestCategories;
+<<<<<<< HEAD
 import com.dotridge.util.SesssionFactoryUtil;
 
 public class LabTestCategoriesDaoImpl implements LabTestCategoriesDao {
@@ -18,6 +19,14 @@ public class LabTestCategoriesDaoImpl implements LabTestCategoriesDao {
 	public LabTestCategories createLabTestCategories(LabTestCategories labTestCategories) {
 		//Session session = sf.openSession();
 		SessionFactory sf=SesssionFactoryUtil.getSessionFactory();
+=======
+
+public class LabTestCategoriesDaoImpl implements LabTestCategoriesDao {
+	private SessionFactory sf;
+
+	@Override
+	public LabTestCategories createLabTestCategories(LabTestCategories labTestCategories) {
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 		Session session = sf.openSession();
 		Transaction transaction = session.beginTransaction();
 		session.save(labTestCategories);
@@ -27,8 +36,11 @@ public class LabTestCategoriesDaoImpl implements LabTestCategoriesDao {
 
 	@Override
 	public LabTestCategories getLabTestCategoriesById(int id) {
+<<<<<<< HEAD
 		//Session session = sf.openSession();
 		SessionFactory sf=SesssionFactoryUtil.getSessionFactory();
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 		Session session = sf.openSession();
 		Transaction transaction = session.beginTransaction();
 		LabTestCategories lab = (LabTestCategories) session.get(LabTestCategories.class, id);
@@ -38,8 +50,11 @@ public class LabTestCategoriesDaoImpl implements LabTestCategoriesDao {
 
 	@Override
 	public LabTestCategories updateLabTestCategories(LabTestCategories labTestCategories) {
+<<<<<<< HEAD
 		//Session session = sf.openSession();
 		SessionFactory sf=SesssionFactoryUtil.getSessionFactory();
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 		Session session = sf.openSession();
 		Transaction transaction = session.beginTransaction();
 		session.update(labTestCategories);
@@ -49,8 +64,11 @@ public class LabTestCategoriesDaoImpl implements LabTestCategoriesDao {
 
 	@Override
 	public boolean deleteLabTestCategories(int pId) {
+<<<<<<< HEAD
 		//Session session = sf.openSession();
 		SessionFactory sf=SesssionFactoryUtil.getSessionFactory();
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 		Session session = sf.openSession();
 		Transaction transaction = session.beginTransaction();
 		LabTestCategories labCat = (LabTestCategories) session.get(LabTestCategories.class, pId);
@@ -62,8 +80,11 @@ public class LabTestCategoriesDaoImpl implements LabTestCategoriesDao {
 
 	@Override
 	public List<LabTestCategories> getLabTestCategoriesByName(String catgryName) {
+<<<<<<< HEAD
 		//Session session = sf.openSession();
 		SessionFactory sf=SesssionFactoryUtil.getSessionFactory();
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 		Session session = sf.openSession();
 		Transaction transaction = session.beginTransaction();
 		String hql = "from LabTestCategories l where l.labTestCategorie like:TestCategorie";
@@ -75,15 +96,23 @@ public class LabTestCategoriesDaoImpl implements LabTestCategoriesDao {
 
 	@Override
 	public LabTestCategories getLabTestCategoriesByUniqueName(String name) {
+<<<<<<< HEAD
 		SessionFactory sf=SesssionFactoryUtil.getSessionFactory();
 		Session session = sf.openSession();
+=======
+		Session session = sf.openSession();
+		Transaction transaction = session.beginTransaction();
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 		return null;
 	}
 
 	@Override
 	public List<LabTestCategories> getAllLabTestCategoriess() {
+<<<<<<< HEAD
 	//	Session session = sf.openSession();
 		SessionFactory sf=SesssionFactoryUtil.getSessionFactory();
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 		Session session = sf.openSession();
 		Transaction transaction = session.beginTransaction();
 		String hql="from LabTestCategories";
@@ -94,8 +123,11 @@ public class LabTestCategoriesDaoImpl implements LabTestCategoriesDao {
 
 	@Override
 	public List<LabTestCategories> getAllLabTestCategoriessByPagianation(int currentPage, int noOfRecPerPage) {
+<<<<<<< HEAD
 		//Session session = sf.openSession();
 		SessionFactory sf=SesssionFactoryUtil.getSessionFactory();
+=======
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 		Session session = sf.openSession();
 		Transaction transaction = session.beginTransaction();
 		String hql="from LabTestCategories";

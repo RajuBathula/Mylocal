@@ -84,12 +84,17 @@
 
 			</tr>
 		</table>
+<<<<<<< HEAD
 		<nav>
+=======
+		<%-- <nav>
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 		<ul class="pagination">
 			<li><a href="./getAllHospitalsByPaging?currentPage=${loop.count-1}" aria-label="Previous"> <span
 					aria-hidden="true">&laquo;</span>
 					</a></li>
 					 <c:forEach
+<<<<<<< HEAD
 						items="${pageBarList}" var="adminBean" varStatus="loop">
 						<li><a href="./getAllAdminsByPaging?currentPage=${loop.count}">${loop.count}</a></li>
 					</c:forEach>
@@ -98,6 +103,16 @@
 					</a></li>
 		</ul>
 		</nav>
+=======
+						items="${pageBarList}" var="hospBean" varStatus="loop">
+						<li><a href="./getAllHospitalsByPaging?currentPage=${loop.count}">${loop.count}</a></li>
+					</c:forEach>
+					<li><a href="./getAllHospitalsByPaging?currentPage=${loop.count+1}" aria-label="Next"> <span
+							aria-hidden="true">&raquo;</span>
+					</a></li>
+		</ul>
+		</nav> --%>
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	</div>
 </body>
 </html>

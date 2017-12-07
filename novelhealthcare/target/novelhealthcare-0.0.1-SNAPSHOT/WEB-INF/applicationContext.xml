@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
+<<<<<<< HEAD
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
 	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans  
@@ -15,13 +16,28 @@
 	<jee:jndi-lookup jndi-name="jdbc/novelhealthDS" id="dataSource"></jee:jndi-lookup>
 
 	<!-- <bean id="dataSource"
+=======
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+             http://www.springframework.org/schema/beans/spring-beans.xsd
+             http://www.springframework.org/schema/context 
+             http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:component-scan base-package="com.dotridge.service"></context:component-scan>
+	<context:component-scan base-package="com.dotridge.dao"></context:component-scan>
+	<bean id="dataSource"
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
 		<property name="username" value="root"></property>
 		<property name="password" value="root"></property>
 		<property name="url" value="jdbc:mysql://localhost:3306/novelhealthcare"></property>
+<<<<<<< HEAD
 	</bean> -->
+=======
+	</bean>
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 
 
 	<bean id="sessionFactory"
@@ -32,6 +48,7 @@
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
 				<prop key="hibernate.show_sql">true</prop>
 				<prop key="hibernate.hbm2ddl.auto">update</prop>
+<<<<<<< HEAD
 				<prop key="hibernate.cache.use_second_level_cache">true</prop>
 				<prop key="hibernate.cache.use_query_cache">true</prop>
 				<prop key="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</prop>
@@ -48,5 +65,10 @@
 				<value>messages</value>
 			</list>
 		</property>
+=======
+			</props>
+		</property>
+		<property name="packagesToScan" value="com.dotridge.domain"></property>
+>>>>>>> 28fd609428943cbdc10d8ea23539343f17ec1082
 	</bean>
 </beans>
